@@ -64,9 +64,8 @@
 -(void)fetchCafesWithUserLocation:(CLLocationCoordinate2D)location searchTerm:(NSString *)searchTerm completion:(void(^)(NSArray<MKAnnotation>*))handler {
   
   NSString *yelpAPIString = @"https://api.yelp.com/v3/businesses/search";
-  NSString *yelpAPIKey = @"2_h9hGfTkNbvoEYCYAY-9c2J-aF1w2bvhsOVM-69_-rDecmiQsJs-mhW9HjfmfSk-LSNlri6VXz2klSTJQkrAlogC1xijeZpPhk4TGoan20nwT_vWpH2JRXjnw1YWnYx";
+  NSString *yelpAPIKey = @"your api key";
   
-  NSURLSession *session = [NSURLSession sharedSession];
   NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:yelpAPIString];
   NSURLQueryItem *categoryItem = [NSURLQueryItem queryItemWithName:@"categories" value:@"cafes"];
   NSURLQueryItem *searchItem = [NSURLQueryItem queryItemWithName:@"term" value:searchTerm];
@@ -79,6 +78,7 @@
   [request addValue:[NSString stringWithFormat:@"Bearer %@", yelpAPIKey] forHTTPHeaderField:@"Authorization"];
   [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
   
+  NSURLSession *session = [NSURLSession sharedSession];
   NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
     
     if (error) {
