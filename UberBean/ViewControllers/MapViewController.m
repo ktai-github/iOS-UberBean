@@ -182,6 +182,12 @@ static const double lng = 0.01;
   [self.mapView showAnnotations:cafes animated:YES];
 }
 
+#pragma mark - Navigation
+
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+  
+}
+
 #pragma mark - Shake
 
 - (BOOL)becomeFirstResponder {
