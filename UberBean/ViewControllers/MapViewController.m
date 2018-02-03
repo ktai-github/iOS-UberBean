@@ -184,7 +184,7 @@ static const double lng = 0.01;
 
 #pragma mark - Navigation
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   
 }
 
