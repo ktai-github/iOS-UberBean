@@ -182,6 +182,17 @@ static const double lng = 0.01;
   [self.mapView showAnnotations:cafes animated:YES];
 }
 
+#pragma mark - Shake
+
+- (BOOL)becomeFirstResponder {
+  return YES;
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+  if (motion == UIEventSubtypeMotionShake) {
+    NSLog(@"Present the search view controller");
+  }
+}
 
 @end
 
