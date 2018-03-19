@@ -64,7 +64,7 @@
 -(void)fetchCafesWithUserLocation:(CLLocationCoordinate2D)location searchTerm:(NSString *)searchTerm completion:(void(^)(NSArray<MKAnnotation>*))handler {
   
   NSString *yelpAPIString = @"https://api.yelp.com/v3/businesses/search";
-  NSString *yelpAPIKey = @"your api key";
+  NSString *yelpAPIKey = @"BgYhenFNjU1zipLNEy3qHprMigciGVkuSxi7ZJKd0qVngwN5_YkPRuruN8RPR_puRBQrvG0bnBM84I4hRfQ488Ulw0e8Vv8Yd_YeIQ082BIZW_ngSeZ8x_ZPWcacWnYx";
   
   NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:yelpAPIString];
   NSURLQueryItem *categoryItem = [NSURLQueryItem queryItemWithName:@"categories" value:@"cafes"];

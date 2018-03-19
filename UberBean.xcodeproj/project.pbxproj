@@ -14,6 +14,7 @@
 		22749E961FD5F07E009B1F2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22749E901FD5F07E009B1F2D /* LaunchScreen.xib */; };
 		22749E971FD5F07E009B1F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22749E911FD5F07E009B1F2D /* Assets.xcassets */; };
 		22749E981FD5F07E009B1F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22749E921FD5F07E009B1F2D /* Main.storyboard */; };
+		2CB3D5B9205F62AC009A1924 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3D5B8205F62AC009A1924 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		22749E911FD5F07E009B1F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22749E931FD5F07E009B1F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22749E951FD5F07E009B1F2D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB3D5B7205F62AC009A1924 /* UberBean-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UberBean-Bridging-Header.h"; sourceTree = "<group>"; };
+		2CB3D5B8205F62AC009A1924 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* UberBean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberBean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +59,8 @@
 			children = (
 				2258A08520251ACC00DDB477 /* MapViewController.h */,
 				2258A08620251ACC00DDB477 /* MapViewController.m */,
+				2CB3D5B8205F62AC009A1924 /* SearchViewController.swift */,
+				2CB3D5B7205F62AC009A1924 /* UberBean-Bridging-Header.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -126,7 +131,7 @@
 				TargetAttributes = {
 					D2A5F1FF1F4A9144005CD714 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -166,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB3D5B9205F62AC009A1924 /* SearchViewController.swift in Sources */,
 				2258A081202519C500DDB477 /* main.m in Sources */,
 				2258A08420251A9500DDB477 /* Cafe.m in Sources */,
 				2258A07D202518D800DDB477 /* AppDelegate.m in Sources */,
@@ -303,6 +309,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lighthouse-labs.LighthouseLabsAssignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UberBean/ViewControllers/UberBean-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -318,6 +325,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lighthouse-labs.LighthouseLabsAssignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UberBean/ViewControllers/UberBean-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
